@@ -47,8 +47,6 @@ if (eta < 18) {
 
 // L’output del prezzo finale va messo fuori in forma umana(con massimo due decimali, per indicare centesimi sul prezzo)
 
-document.getElementById('prezzofinale').innerHTML = 'Il suo biglietto costa: ' + parseFloat(prezzoFinale).toFixed(2) + ' €.';
-
 // Bonus: controllare se l'utente ha inserito dei dati nel prompt
 if (chilometri.length == 0 || chilometri == '0') {
     document.getElementById('prezzofinale').innerHTML = 'Non hai inserito i chilometri. Aggiorna la pagina e inserisci i dati corretti.';
@@ -57,3 +55,4 @@ if (chilometri.length == 0 || chilometri == '0') {
 } else {
     document.getElementById('prezzofinale').innerHTML = 'Il prezzo finale del biglietto è di ' + prezzoFinale.toFixed(2) + '€.';
 }
+
